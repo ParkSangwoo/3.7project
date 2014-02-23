@@ -7,11 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Intro extends Fragment{
+public class Favorite extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState){
-		View intro = inflater.inflate(R.layout.intro_frag, container, false);
-		return intro;
+			Bundle savedInstanceState) {
+		View favorite = inflater.inflate(R.layout.favorite_frag, container, false);
+		((TextView)favorite.findViewById(R.id.textView)).setText("Windows");
+		return favorite;
 	}
 }

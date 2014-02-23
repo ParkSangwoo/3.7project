@@ -41,9 +41,27 @@ public class MainMenu extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstancdState){
-		View mainMenu = inflater.inflate(R.layout.main_menu, container, false);
+		View mainMenu = inflater.inflate(R.layout.mainmenu_frag, container, false);
 		tv = (TextView)mainMenu.findViewById(R.id.mainmenuInfo);
 		tv.setText("  음료 종류를 선택하세요");
-		arrayList = new ArrayList
+		arrayList = new ArrayList<String>();
+		arrayList.add("에스프레소");
+		arrayList.add("브루드 커피");
+		arrayList.add("프라푸치노");
+		arrayList.add("티 및 기타음료");
+		
+		aAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,arrayList);
+		
+		listView = (ListView)mainMenu.findViewById(R.id.mainmenuList);
+		listView.setAdapter(aAdapter);
+		listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+		
+		listView.setOnItemClickListener(new OnItemClickListener(){
+			public void onItemClick(AdapterView<?> parent, View v, int position, long id){
+				String str = (String)aAdapter.getItem(position);
+				Toast.makeText(getActivity(), str, Toast.LENGTH_SHORT).show();
+			}
+		});
+		return mainMenu;
 	}
 }

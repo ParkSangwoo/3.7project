@@ -13,11 +13,11 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter{
 	public Fragment getItem(int i){
 		switch(i){
 		case 0:
-			return new intro();
+			return new Intro();
 		case 1:
-			return new normal_menu();
+			return new MainMenu();
 		case 2:
-			return new favorite_menu();
+			return new Favorite();
 		}
 		return null;
 	}
