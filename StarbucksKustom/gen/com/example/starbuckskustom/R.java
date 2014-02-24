@@ -23,24 +23,66 @@ public final class R {
     public static final class drawable {
         public static final int brewedcoffee=0x7f020000;
         public static final int caffeamericano=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int list_back=0x7f020003;
-        public static final int signaturehotchocolate=0x7f020004;
-        public static final int star=0x7f020005;
+        public static final int caffelatte=0x7f020002;
+        public static final int caffemocha=0x7f020003;
+        public static final int cappuccino=0x7f020004;
+        public static final int caramelcreamfrappuccino=0x7f020005;
+        public static final int caramelfrappuccino=0x7f020006;
+        public static final int caramelmacchiato=0x7f020007;
+        public static final int chaiteacreamfrappuccino=0x7f020008;
+        public static final int chocolatebananafrappuccino=0x7f020009;
+        public static final int chocolatecreamchipfrappuccino=0x7f02000a;
+        public static final int chocolatecreamfrappuccino=0x7f02000b;
+        public static final int coffeefrappuccino=0x7f02000c;
+        public static final int espresso=0x7f02000d;
+        public static final int espressoconpanna=0x7f02000e;
+        public static final int espressofrappuccino=0x7f02000f;
+        public static final int espressomacchiato=0x7f020010;
+        public static final int fullleaftea=0x7f020011;
+        public static final int greenteacreamfrappuccino=0x7f020012;
+        public static final int greentealatte=0x7f020013;
+        public static final int ic_launcher=0x7f020014;
+        public static final int icedcaffeamericano=0x7f020015;
+        public static final int icedcaffelatte=0x7f020016;
+        public static final int icedcaffemocha=0x7f020017;
+        public static final int icedcaramelmacchiato=0x7f020018;
+        public static final int icedcoffee=0x7f020019;
+        public static final int icedshakentea=0x7f02001a;
+        public static final int icedstarbucksdolcelatte=0x7f02001b;
+        public static final int icedwhitechocolatemocha=0x7f02001c;
+        public static final int javachipfrappuccino=0x7f02001d;
+        public static final int list_back=0x7f02001e;
+        public static final int mangobananafrappuccino=0x7f02001f;
+        public static final int mangopassionfruitjuiceblended=0x7f020020;
+        public static final int mochafrappuccino=0x7f020021;
+        public static final int raspberrybananafrappuccino=0x7f020022;
+        public static final int raspberryblackcurrantjuiceblended=0x7f020023;
+        public static final int signaturehotchocolate=0x7f020024;
+        public static final int star=0x7f020025;
+        public static final int starbucksdolcelatte=0x7f020026;
+        public static final int strawberriescreamfrappuccino=0x7f020027;
+        public static final int tazochaitealatte=0x7f020028;
+        public static final int vanillacreamfrappuccino=0x7f020029;
+        public static final int whitechocolatemocha=0x7f02002a;
+        public static final int whitechocolatemochafrappuccino=0x7f02002b;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
-        public static final int mainmenu=0x7f080002;
-        public static final int mainmenuInfo=0x7f080003;
-        public static final int mainmenuList=0x7f080004;
+        public static final int action_settings=0x7f080008;
+        public static final int mainmenu=0x7f080005;
+        public static final int mainmenuInfo=0x7f080006;
+        public static final int mainmenuInfo_e=0x7f080002;
+        public static final int mainmenuList=0x7f080007;
+        public static final int mainmenuList_e=0x7f080003;
+        public static final int mainmenu_e=0x7f080001;
         public static final int pager=0x7f080000;
-        public static final int textView=0x7f080001;
+        public static final int textView=0x7f080004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int favorite_frag=0x7f030001;
-        public static final int intro_frag=0x7f030002;
-        public static final int mainmenu_frag=0x7f030003;
+        public static final int e_frag=0x7f030001;
+        public static final int favorite_frag=0x7f030002;
+        public static final int intro_frag=0x7f030003;
+        public static final int mainmenu_frag=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;

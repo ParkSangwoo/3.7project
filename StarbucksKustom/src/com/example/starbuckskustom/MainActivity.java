@@ -6,8 +6,11 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class MainActivity extends FragmentActivity {
@@ -55,7 +58,7 @@ public class MainActivity extends FragmentActivity {
 
         	@Override
         	public void onTabUnselected(android.app.ActionBar.Tab tab,
-        			FragmentTransaction ft) {
+        		FragmentTransaction ft) {
         		// TODO Auto-generated method stub
 				
         	}
@@ -64,5 +67,14 @@ public class MainActivity extends FragmentActivity {
         actionBar.addTab(actionBar.newTab().setText("이 앱은요").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("MENU 음료").setTabListener(tabListener));
         actionBar.addTab(actionBar.newTab().setText("FAVORITE").setTabListener(tabListener));
+        /*
+        public void mOnClick(View v){
+        	android.app.FragmentManager fm = getFragmentManager();
+        	android.app.Fragment fragment = fm.findFragmentById(R.id.mainmenu);
+        	
+        	switch(v.getId()){
+        	case.R.id.mainmenuList.
+        	}
+        }*/
     } 
 }

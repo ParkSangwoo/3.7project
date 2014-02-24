@@ -6,10 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.SimpleCursorAdapter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +20,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainMenu extends Fragment {
+public class MainMenu_E extends Fragment {
 	SearchView searchView;
 	ListView listView;
 	SQLiteDatabase db;
@@ -44,20 +41,18 @@ public class MainMenu extends Fragment {
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstancdState){
-		
-		
-		View mainMenu = inflater.inflate(R.layout.mainmenu_frag, container, false);
-		tv = (TextView)mainMenu.findViewById(R.id.mainmenuInfo);
+		View mainMenu = inflater.inflate(R.layout.e_frag, container, false);
+		tv = (TextView)mainMenu.findViewById(R.id.mainmenuInfo_e);
 		tv.setText("  음료 종류를 선택하세요");
 		arrayList = new ArrayList<String>();
-		arrayList.add("에스프레소");
+		arrayList.add("헬프");
 		arrayList.add("브루드 커피");
 		arrayList.add("프라푸치노");
 		arrayList.add("티 및 기타음료");
 		
 		aAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,arrayList);
 		
-		listView = (ListView)mainMenu.findViewById(R.id.mainmenuList);
+		listView = (ListView)mainMenu.findViewById(R.id.mainmenuList_e);
 		listView.setAdapter(aAdapter);
 		listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 		
@@ -65,15 +60,6 @@ public class MainMenu extends Fragment {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id){
 				String str = (String)aAdapter.getItem(position);
 				Toast.makeText(getActivity(), str, Toast.LENGTH_SHORT).show();
-				if(str == "에스프레소")
-				{
-					FragmentManager fm = getFragmentManager();
-					Fragment fragment = fm.findFragmentById(R.id.mainmenu);
-					FragmentTransaction ft = fm.beginTransaction();
-					ft.hide(fragment);
-					ft.commit();
-					Log.i(null, "aaaaaa");
-				}
 			}
 		});
 		return mainMenu;
